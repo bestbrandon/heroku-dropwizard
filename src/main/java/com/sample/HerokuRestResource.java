@@ -14,7 +14,7 @@ public class HerokuRestResource {
     @Path("/hello")
     @Produces(MediaType.APPLICATION_JSON)
     public Person getHelloWorld() {
-        Person person = new Person("Faraz", "Khan", "He's a herb.");
+        Person person = new Person("Faraz", "Khan", "He's a herb. YER");
         return person;
     }
 }
