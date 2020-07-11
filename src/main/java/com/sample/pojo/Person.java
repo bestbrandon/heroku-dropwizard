@@ -1,19 +1,18 @@
 package com.sample.pojo;
 
 public class Person {
-    private Long id;
+
     private String firstName;
     private String lastName;
+    private String bio;
 
     public Person() {
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public Person(String firstName, String lastName, String bio) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.bio = bio;
     }
 
     public String getFirstName() {
@@ -30,5 +29,13 @@ public class Person {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getBio() {
+        return bio;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
     }
 }
