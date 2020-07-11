@@ -1,1 +1,1 @@
-web: java -jar target/heroku-dropwizard-1.0-SNAPSHOT.jar server
+web: java -Ddw.server.applicationConnectors[0].port=$PORT -jar target/heroku-dropwizard-1.0-SNAPSHOT.jar server
